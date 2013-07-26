@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project 
+    name="Struts Framework"
+        href="http://struts.apache.org/"
+       image="images/struts.gif">
+
+    <title>
+        Apache Struts Web Application Framework
+    </title>
+
+    <menu name="Struts">
+        <item 
+            name="Welcome"
+            href="index.html"
+            />
+        <item 
+            name="Learning"                
+            href="learning.html"
+            />
+        <item 
+            name="Acquiring"               
+            href="acquiring.html"
+            />
+        <item 
+            name="Using"                   
+            href="using.html"
+            />
+        <item
+            name="Who We Are"
+            href="volunteers.html"
+            />
+        <item
+            name="Announcements"
+            href="announce.html"
+            />
+</menu>
+
+    <menu name="Documentation">
+        <item
+            name="User and Developer Guides"
+            href="userGuide/index.html"
+            />
+        <item
+            name="Release Notes"
+            href="userGuide/release-notes.html"
+            />
+        <item
+            name="Javadoc"
+            href="api/index.html"
+            />
+        <item
+            name="FAQs and Howtos"
+            href="faqs/index.html"
+            />
+    </menu>
+
+    <menu name="Community">
+        <item
+            name="Known Issues (Bugzilla)"
+            href="http://jakarta.apache.org/site/bugs.html"
+            />
+        <item
+            name="Wiki Pages"
+            href="http://wiki.apache.org/struts"
+            />
+        <item
+            name="List Archive"            
+            href="http://mail-archives.apache.org/eyebrowse/SummarizeList?listId=241"
+            />
+        <item
+            name="Resource Directory"
+            href="http://wiki.apache.org/struts/StrutsResources"
+            />
+    </menu>
+
+    <menu name="Download">
+        <item 
+            name="Binaries"                
+            href="http://struts.apache.org/download.cgi"
+            />
+        <item 
+            name="Source Code"             
+            href="http://struts.apache.org/download.cgi"
+            />
+        <item
+            name="Development Releases"
+            href="http://svn.apache.org/dist/struts/"
+            />
+    </menu>
+
+    <menu name="Development">
+        <item
+            name="Bylaws"
+            href="bylaws.html"
+            />
+        <item
+            name="Release Guidelines"
+            href="releases.html"
+            />
+        <item
+            name="Roadmap"
+            href="roadmap.html"
+            />
+        <item
+            name="Source Repository"
+            href="http://svn.apache.org/viewcvs.cgi/struts/action/branches/STRUTS_1_2_BRANCH/"
+            />
+    </menu>
+
+</project>

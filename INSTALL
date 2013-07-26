@@ -1,0 +1,15 @@
+$Id: INSTALL 51211 2003-12-10 01:04:10Z husted $
+
+STRUTS
+======
+
+For most containers, you need only to:
+
+* Copy the WAR files in your Struts < /webapp > directory to your containers
+  < webapps > directory.
+
+* In some cases, you may need to restart your container if it is running.
+
+For more details, and container-specific instructions, see the Installation 
+chapter of the Struts User Guide. 
+
