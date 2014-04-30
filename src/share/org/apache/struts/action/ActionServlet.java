@@ -38,6 +38,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.BeanUtilsBean;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.beanutils.converters.BigDecimalConverter;
@@ -50,6 +51,7 @@ import org.apache.commons.beanutils.converters.FloatConverter;
 import org.apache.commons.beanutils.converters.IntegerConverter;
 import org.apache.commons.beanutils.converters.LongConverter;
 import org.apache.commons.beanutils.converters.ShortConverter;
+import org.apache.commons.beanutils.expression.DefaultResolver;
 import org.apache.commons.collections.FastHashMap;
 import org.apache.commons.digester.Digester;
 import org.apache.commons.digester.RuleSet;
@@ -318,6 +320,24 @@ public class ActionServlet extends HttpServlet {
      * @exception ServletException if we cannot configure ourselves correctly
      */
     public void init() throws ServletException {
+
+		// CVE-2014-0094
+		try {
+			BeanUtilsBean.getInstance().getPropertyUtils()
+					.setResolver(new DefaultResolver() {
+						public String next(String expression) {
+							String property = super.next(expression);
+							if ("class".equalsIgnoreCase(property)
+									|| "declaringClass"
+											.equalsIgnoreCase(property)) {
+								return "";
+							}
+							return property;
+						}
+					});
+		} catch (Throwable t) {
+			log.error("Upgrade to commons-beanutils 1.8 or above.", t);
+		}
 
         // Wraps the entire initialization in a try/catch to better handle
         // unexpected exceptions and errors to provide better feedback
