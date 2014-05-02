@@ -32,8 +32,9 @@ pom.xmlの依存関係を以下のように修正します。
     <dependency>
       <groupId>org.codelibs.struts</groupId>
       <artifactId>cl-struts</artifactId>
-      <version>1.2.9.0</version>
+      <version>1.2.9.1</version>
     </dependency>
+    <!-- SAStrutsを利用している場合 -->
     <dependency>
       <groupId>org.seasar.sastruts</groupId>
       <artifactId>sa-struts</artifactId>
@@ -47,6 +48,7 @@ pom.xmlの依存関係を以下のように修正します。
     </dependency>
 
 上記によりstrutsのjarファイルがcl-strutsのjarファイルに置き換わります。
+(commons-beanutils 1.8.0 以上が必要です)
 
 ## その他
 
