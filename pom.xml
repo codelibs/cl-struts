@@ -183,6 +183,9 @@
             <include>org/apache/struts/action/TestDynaActionFormClass.java</include>
             <include>org/apache/struts/config/TestModuleConfig.java</include>
             <include>org/apache/struts/config/TestActionConfigMatcher.java</include>
+            <include>org/apache/struts/config/TestActionConfig.java</include>
+            <include>org/apache/struts/validator/TestDynaValidatorForm.java</include>
+            <include>org/apache/struts/validator/TestValidatorForm.java</include>
             <include>org/apache/struts/util/Test*.java</include>
           </includes>
         </configuration>

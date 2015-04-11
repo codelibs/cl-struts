@@ -101,10 +101,13 @@ public class ValidatorForm extends ActionForm implements Serializable {
 
         String validationKey = getValidationKey(mapping, request);
 
+        // 2014/07/02 - security problem patch.
+        // Author: NTT DATA Corporation
+        int validationPage = determinePage(mapping, request);
         Validator validator = Resources.initValidator(validationKey,
                              this,
                              application, request,
-                             errors, page);
+                             errors, validationPage);
 
         try {
             validatorResults = validator.validate();
@@ -113,6 +116,24 @@ public class ValidatorForm extends ActionForm implements Serializable {
         }
 
         return errors;
+    }
+
+    // 2014/07/02 - security problem patch.
+    // Author: NTT DATA Corporation
+    /**
+     * Determine validation page.<br>
+     * If acceptPage of ActionMapping is null, then returns Integer.MAX_VALUE.
+     * (multi-page validation is disabled. All validation fields are enabled.)<br>
+     * If page property is less than acceptPage of ActionMapping, returns acceptPage value.<br>
+     * If page property is greater than or equal to acceptPage of ActionMapping, returns page property value.
+     * @param mapping The mapping used to select this instance.
+     * @param request The servlet request we are processing.
+     * @return validation page.
+     * @since Struts 1.2.9-sp2
+     */
+    protected int determinePage(ActionMapping mapping, HttpServletRequest request) {
+        Integer acceptPage = mapping.getAcceptPage();
+        return acceptPage != null ? Math.max(acceptPage.intValue(), page) : Integer.MAX_VALUE;
     }
 
     /**
