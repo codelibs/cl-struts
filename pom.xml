@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project>
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.codelibs.struts</groupId>
   <artifactId>cl-struts</artifactId>
   <name>CodeLibs Struts</name>
-  <version>1.2.9.2-SNAPSHOT</version>
+  <version>1.2.9.2</version>
   <description>The core of the Struts framework is a flexible control layer based on standard technologies like Java Servlets, JavaBeans, ResourceBundles, and Extensible Markup Language (XML), as well as various Jakarta Commons packages. Struts encourages application architectures based on the Model 2 approach, a variation of the classic Model-View-Controller (MVC) design paradigm. Struts provides its own Controller component and integrates with other technologies to provide the Model and the View. For the Model, Struts can interact with any standard data access technology, including Enterprise Java Beans, JDBC, and Object Relational Bridge. For the View, Struts works well with JavaServer Pages, including JSTL and JSF, as well as Velocity Templates, XSLT, and other presentation systems. The Struts framework provides the invisible underpinnings every professional web application needs to survive. Struts helps you create an extensible development environment for your application, based on published standards and proven design patterns.</description>
   <url>https://github.com/codelibs/cl-struts</url>
   <issueManagement>
@@ -15,104 +15,104 @@
       <id>craigmcc</id>
       <name>Craig R. McClanahan</name>
       <email>craigmcc at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>husted</id>
       <name>Ted Husted</name>
       <email>husted at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>rleland</id>
       <name>Rob Leland</name>
       <email>rleland at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>cedric</id>
       <name>Cedric Dumoulin</name>
       <email>cedric.dumoulin at lifl.fr</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>martinc</id>
       <name>Martin Cooper</name>
       <email>martinc at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>arron</id>
       <name>Arron Bates</name>
       <email>arron at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>jholmes</id>
       <name>James Holmes</name>
       <email>jholmes at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>dmkarr</id>
       <name>David M. Karr</name>
       <email>dmkarr at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>ekbush</id>
       <name>Eddie Bush</name>
       <email>ekbush at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>dgraham</id>
       <name>David Graham</name>
       <email>dgraham at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>jmitchell</id>
       <name>James Mitchell</name>
       <email>jmitchell at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>turner</id>
       <name>James Turner</name>
       <email>turner at blackbear.com</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>sraeburn</id>
       <name>Steve Raeburn</name>
       <email>sraeburn at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>mrdon</id>
       <name>Don Brown</name>
       <email>mrdon at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>germuska</id>
       <name>Joe Germuska</name>
       <email>germuska at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
     <developer>
       <id>niallp</id>
       <name>Niall Pemberton</name>
       <email>niallp at apache.org</email>
-      <organization></organization>
+      <organization />
     </developer>
   </developers>
   <contributors>
     <contributor>
       <name>Tim Chen</name>
       <email>tchen at ampabay.rr.com</email>
-      <organization></organization>
+      <organization />
     </contributor>
   </contributors>
   <scm>
