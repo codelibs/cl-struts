@@ -32,7 +32,7 @@ pom.xmlの依存関係を以下のように修正します。
     <dependency>
       <groupId>org.codelibs.struts</groupId>
       <artifactId>cl-struts</artifactId>
-      <version>1.2.9.1</version>
+      <version>1.2.9.2</version>
     </dependency>
     <!-- SAStrutsを利用している場合 -->
     <dependency>
